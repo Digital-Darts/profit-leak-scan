@@ -252,4 +252,4 @@ Tell the owner this, in the report, in this order.
 4. **Re-pull the search terms report in 30 days.** New terms arrive constantly, and the list is a habit rather than a one-off job.
 5. **Do not negative anything that has converted**, even once, even if it looks wrong. Check before you paste.
 
-Point five matters most. The fastest way to make an account worse is to bulk-paste a negative list without checking it against conversions.
+The fastest way to make an account worse is to bulk-paste a negative list without checking it against conversions.
