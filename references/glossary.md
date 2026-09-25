@@ -12,7 +12,11 @@ Never use a term without explaining it once. Never explain it twice.
 
 **POAS, profit on ad spend.** The same idea as ROAS but using profit instead of revenue. It answers the question ROAS cannot: did this campaign put money in the bank. A campaign at 6x ROAS selling a low-margin product can sit below a campaign at 3x selling a high-margin one.
 
+**Contribution margin.** The share of each sale left after product cost, shipping and payment fees, before any ad spend. If a $100 order leaves you $40, your contribution margin is 40%. Every break-even figure in this report is worked out from it.
+
 **Contribution.** What is left after product cost, shipping, payment fees and the ad spend. This is the number that pays your wages, your rent and everything else. If contribution is negative, the campaign is being funded by the rest of the business.
+
+**Ex GST.** A figure with the GST taken out. GST goes to the tax office, so it is not part of what the store earns. Every profit figure in this report is ex GST, even when Google's numbers include it.
 
 **Brand leak.** The share of your ad spend that went to people searching for your own name. They already knew about you. Most of them were coming anyway, so a lot of that spend buys a sale you already had.
 
@@ -22,7 +26,9 @@ Never use a term without explaining it once. Never explain it twice.
 
 **Attribution.** Which ad gets credit for a sale. Every platform claims the ones it touched, so if you add up what Google, Meta and your email tool each claim, you will have sold more than the store actually made.
 
-**Conversion value.** The dollar figure Google records against a sale. It should be what the customer paid for the products. If it includes GST and delivery, every ROAS in the account is inflated by the same amount.
+**Conversion value.** The dollar figure Google records against a sale. It should be what the customer paid for the products. If it includes GST and delivery, every ROAS in the account is inflated by the same amount. This scan takes the GST out before doing any maths.
+
+**Conversion lag.** The time between someone clicking an ad and buying. Google counts the sale against the day of the click, so the most recent days in any report look worse than they will once the late sales arrive.
 
 **Search term.** What someone actually typed into Google. Different from a keyword, which is what you told Google you wanted to show up for. The gap between the two is where wasted spend lives.
 

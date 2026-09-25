@@ -6,6 +6,8 @@ Some of these you can answer from the exports. Most you have to ask, because a C
 
 **Ask them one at a time, in plain language, and wait for the answer.** Do not fire ten questions at once, and do not assume a "no" when someone does not answer. An unanswered check scores zero and is reported as unanswered, not as failed. Say which ones were unanswered at the end.
 
+If the store brief already answered a check, use that answer and do not ask again. Question 4 of the brief answers check 7.
+
 For each check: what it is, how to see it, why it costs money, and what a good answer looks like.
 
 ---
@@ -86,11 +88,11 @@ This is the half of the account nobody opens, and on many stores it is the large
 
 **Ask:** "When Google Ads reports a $100 sale, is that $100 the product price, or does it include GST and delivery?"
 
-**From the data:** compare the average conversion value in the Google Ads export to the average order subtotal in Shopify. If Google's is consistently around 10% higher in Australia, tax is in there.
+**From the data:** run the test in `method.md` § Same footing. Compare Google's value per conversion with Shopify's average order, both GST-inclusive and ex GST. Most Australian stores have GST inside their Shopify prices, so Shopify's Subtotal already includes it. A Google figure that matches Subtotal is therefore usually GST-inclusive, not clean.
 
-**Why it matters:** every ROAS target is set against this number. If it includes tax and shipping, every campaign looks more profitable than it is, and the break-even calculation in this report is set against an inflated figure.
+**Why it matters:** every ROAS target is set against this number. If it includes tax and shipping, every campaign looks more profitable than it is. The scan takes GST out before doing any maths, but the targets set inside Google Ads are still set against the inflated figure.
 
-**Good answer:** conversion value is the subtotal, excluding tax and shipping.
+**Good answer:** conversion value is the product value after discounts, excluding GST and shipping. A GST-inclusive value still scores as a fail, but say it is workable as long as every target set in Google is 10% higher to match.
 
 ---
 
