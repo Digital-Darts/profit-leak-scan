@@ -13,7 +13,7 @@ Match this structure. Keep it this short. A store owner reads the first screen a
 **Northbound Outdoors** · 1 June to 29 August 2026 · AUD
 Spend in window: **$47,310** · Google-reported value: **$333,911** (7.06x), or **$303,555** ex GST (6.42x)
 
-**Built on:** campaigns, search terms and Performance Max search terms from Google Ads, and orders and products from Shopify. Store brief answered. Shopify prices include GST, and so does Google's conversion value, checked against your orders. Conversion lag about 7 days, and the window ended 7 days before the exports were pulled. Cost per item assumed ex GST.
+**Built on:** the campaigns and search terms reports from Google Ads, and orders and products from Shopify. Store brief answered. Shopify prices include GST, and so does Google's conversion value, checked against your orders. Conv. value and Original conv. value match, so Google is adding nothing to your sales figures. Conversion lag about 7 days, and the window ended 7 days before the exports were pulled. Cost per item assumed ex GST. Refunds came to 2% of order value.
 
 ## Score: 65 / 100, leaking
 
@@ -45,7 +45,7 @@ Nearly one in four dollars bought a click from someone who already knew who you 
 
 Performance Max bids on your brand by default and records every one of those sales as a win. That is why it is your best-performing campaign on paper.
 
-The Performance Max figure is a floor rather than a total. Google leaves low-volume searches out of the Performance Max search terms view, so some brand traffic cannot be counted.
+The Performance Max figure is a floor rather than a total. Google leaves low-volume searches out of the search terms report, and its own total row shows $6,150 of your spend sitting in searches it does not list. Some of that will be your name too.
 
 **Google credits $123,300 of sales, ex GST, to searches for your name.** If your brand search behaves like the median in Stella's 225 geo-holdout tests, the ads caused about $7,900 of that, and the rest was most likely coming anyway. That is an industry median applied to your numbers, not a measurement of your store. The only way to know your own figure is to run a holdout test.
 
@@ -53,7 +53,7 @@ Brand spend is not automatically waste. Some stores defend their name on purpose
 
 ## Profit per campaign
 
-Your contribution margin is 40% across the store, after product cost, shipping and payment fees. Cost per item matched 94% of line items. The other 6% of revenue, mostly bundles, uses the store average.
+Your contribution margin is 40% across the store, after product cost, shipping and payment fees. Cost per item matched 94% of product revenue. The other 6%, mostly bundles, uses the store average.
 
 That puts **break-even at 2.50x** for campaigns selling the whole range. You told us Shopping - Own Label sells only Northbound products, which run at 50%, and Shopping - Stocked Brands sells everything else, which runs at 16%. Those two campaigns get their own break-even.
 
@@ -72,26 +72,33 @@ Google's conversion value includes GST, so every ROAS below has the GST taken ou
 
 ## Wasted spend
 
-$3,910 went to searches that never converted, on terms that each spent more than one order's contribution ($86).
+$3,910 went on search patterns that never produced a sale. Each pattern below cost more than one order's contribution ($86) across all the searches containing it, and not one of those searches converted.
 
-| Pattern | Wasted | Type |
-|---|---|---|
-| "how to" | $680 | Wrong intent |
-| "repair" | $520 | Wrong intent |
-| kmart | $410 | Competitor |
-| "second hand" | $390 | Wrong buyer |
-| jobs | $240 | Employment |
+| Pattern | Spend | Sales | Type |
+|---|---|---|---|
+| "how to" | $680 | 0 | Wrong intent |
+| "repair" | $520 | 0 | Wrong intent |
+| kmart | $410 | 0 | Competitor |
+| "second hand" | $390 | 0 | Wrong buyer |
+| jobs | $240 | 0 | Employment |
+
+One pattern sold but sits under break-even. Searches containing "cheap" cost $310 for two sales, a 1.60x return against the 2.50x it needs. It is worth a look, and it is not on the negative list, because it does sell.
+
+"bunnings" is on the seed list for Australia and stays off yours. Searches containing it cost $190 and brought in five sales.
 
 The negative keyword list is at the end, ready to paste. Check it against your converting terms before you apply any of it, because the fastest way to make an account worse is a bulk paste.
 
 ## Reconciliation
 
-| | Google Ads | Shopify | Gap |
-|---|---|---|---|
-| Conversions / orders | 1,412 | 1,377 | +2.5% |
-| Value / net revenue, both ex GST | $303,555 | $297,600 | +2.0% |
+Shopify counts every order from every channel. Google Ads counts the ones it takes credit for.
 
-Both lines agree, which is rarer than it should be. Your tracking looks sound.
+| | Google Ads | Shopify online store | |
+|---|---|---|---|
+| Sales | 1,412 conversions | 2,390 orders | Google takes credit for 59% |
+| Value, ex GST | $303,555 | $516,480 | 59% |
+| Value per sale, ex GST | $214.98 | $216.10 | within 1% |
+
+What Google records per sale is within 1% of your average order, so the tag is recording real order values. Google Ads takes credit for 59% of your online store orders. Nothing here points to a tracking fault.
 
 Google's conversion value includes GST. This report took it out, but the targets inside Google Ads are still set against the GST-inclusive number. Any target you set there needs to be 10% above the break-even figures in this report.
 
@@ -102,12 +109,12 @@ Google's conversion value includes GST. This report took it out, but the targets
 | 1 | PMax excludes brand | ✗ |
 | 2 | Negative keyword lists | ✗ |
 | 3 | Customer list uploaded | ✓ |
-| 4 | New customer acquisition mode | ✗ |
-| 5 | Shopping and PMax separated | ✓ |
+| 4 | New customer acquisition off on demand-capture campaigns | ✓ |
+| 5 | Shopping and Performance Max on separate products | ✓ |
 | 6 | Feed beyond Shopify defaults | ✗ |
 | 7 | Conversion value excludes tax and shipping | ✗ |
 | 8 | Tracking survived 26 August | ✓ |
-| 9 | Demand Gen and PMax separated | ✓ |
+| 9 | Demand Gen and Performance Max kept apart | ✓ |
 | 10 | Search partners reviewed | ✓ |
 
 **Performance Max has no brand exclusion.** That is where the $9,220 in the brand section comes from, and fix 3 deals with it.
@@ -124,13 +131,13 @@ $3,910 went to searches that never converted over the 90 days, and the list belo
 
 **2. Find out which brands are sinking Shopping - Stocked Brands.** Twenty minutes.
 
-The campaign lost about $800 over 90 days while Google reported 6.10x. Sort your products export by vendor and compare cost per item with price. The brands sitting well under 16% margin are the ones to take out or bid down. Any target on this campaign needs to be at least 6.88x in Google's figures, which is 6.25x plus GST.
+The campaign lost about $800 over 90 days while Google reported 6.10x. Sort your products export by vendor and compare cost per item with price. The brands sitting well under 16% margin are the ones to look at first. Break-even for this campaign is 6.88x in Google's figures, which is 6.25x plus GST.
 
 **3. Split brand out of Performance Max.** Half a day.
 
 Add a brand exclusion to Performance Max and run brand searches through a campaign you control. $9,220 went on your name inside Performance Max over 90 days. Some of it is worth defending, and after the split you decide how much rather than Google deciding for you.
 
-Expect Performance Max's reported ROAS to fall. The sales move to the brand campaign, and the credit for them moves with them. Check first: in the Performance Max search terms view, filter for "northbound" and confirm the spend.
+Expect Performance Max's reported ROAS to fall. The sales move to the brand campaign, and the credit for them moves with them. Check first: in the search terms report, filter Match type to Performance Max, search for "northbound" and confirm the spend.
 
 ---
 
@@ -146,7 +153,7 @@ kmart
 jobs
 ```
 
-*(A real report lists every pattern above the threshold, merged with the seed list.)*
+*(A real report lists every wasted pattern, then any seeds that cost money in the account.)*
 
 ---
 

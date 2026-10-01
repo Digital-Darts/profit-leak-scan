@@ -2,7 +2,7 @@
 
 **A campaign at 6x return can still lose you money. This scan finds the losers.**
 
-Pull your exports from Google Ads and Shopify, answer a few questions about your store, and get back a score out of 100 with the three fixes worth doing this week.
+Pull your exports from Google Ads and Shopify, answer a few questions about your store, and get back a score out of 100 with up to three fixes worth doing this week.
 
 An AI skill that runs on your own data inside your own Claude, ChatGPT or Gemini account. Nothing is uploaded to us. We host a file, not a service.
 
@@ -29,11 +29,11 @@ The scan finds real leaks only when it has real numbers. Check you have these be
 
 Google reports a sale. Your bank reports something different. The difference is where this scan works.
 
-A campaign at 6x return sounds healthy. Take out the GST, what the products cost, what shipping cost and what the payment processor took, and it can sit under water.
+A campaign at 6x return sounds healthy. Take out the GST or VAT, what the products cost, what shipping cost and what the payment processor took, and it can sit under water.
 
 You can push cost of goods into Merchant Center and turn on cart data reporting, and you should. Google then reports gross profit per campaign, but that figure stops before outbound shipping, payment fees and returns, which is where a thin campaign usually goes under.
 
-This free scan joins your ad spend, Shopify orders and cost per item, then takes off GST, shipping and fees, so you can see what each campaign earns you.
+This free scan joins your ad spend, Shopify orders and cost per item, then takes off GST or VAT, shipping and fees, so you can see what each campaign earns you.
 
 ## What it reports
 
@@ -41,11 +41,11 @@ This free scan joins your ad spend, Shopify orders and cost per item, then takes
 |---|---|
 | **Brand leak** | What you spent, per campaign, on people searching your own name. In dollars. Performance Max reported separately, because that is where it hides |
 | **Break-even ROAS** | Per campaign, from your real margin instead of Google's suggested target. Campaigns below the line get flagged, including ones showing a healthy return |
-| **Profit on ad spend** | POAS and contribution per campaign, after GST, product cost, shipping and payment fees |
-| **Wasted spend** | The word patterns eating money across your search terms, plus a negative keyword list ready to paste. Australian seeds included: Afterpay, Zip, Temu, Kmart, Bunnings, Gumtree |
-| **Reconciliation** | Google Ads conversions against Shopify orders, and what the gap between them means |
+| **Profit on ad spend** | POAS and contribution per campaign, after GST or VAT, product cost, shipping and payment fees |
+| **Wasted spend** | The word patterns eating money across your search terms, plus a negative keyword list ready to paste. Seeds for Australia, New Zealand, the UK and the US, each checked against your own account before it goes on the list |
+| **Reconciliation** | What Google records per sale against your average order, and the share of your orders Google takes credit for |
 | **Ten-point check** | Structure and tracking, including whether your tags survived Shopify removing Additional Scripts on 26 August 2026 |
-| **A score out of 100** | Plus the three fixes for this week, ranked by dollars recovered per hour of work |
+| **A score out of 100** | Plus the fixes for this week, three at most, ranked by dollars recovered per hour of work |
 
 Break-even is worked out per campaign when you tell the scan which products each campaign sells. Stocked brands on a 16% margin need 6.25x to break even. Own-label products on a 50% margin need 2x. An account-wide target of 2.5x calls a stocked-brands campaign at 5.5x a winner, and it is losing money.
 
@@ -61,21 +61,22 @@ It also doesn't know your business until you tell it. How long customers take to
 
 1. Check the list in [Before you begin](#before-you-begin).
 2. **[Download profit-leak-scan.zip](https://github.com/Digital-Darts/profit-leak-scan/releases/latest/download/profit-leak-scan.zip).** For Claude, don't unzip it.
-3. Add it to your AI. In Claude, switch on code execution under Settings → Capabilities, then go to Customize → Skills → **+** → Create skill → Upload a skill. ChatGPT and Gemini steps are in [INSTALL.md](INSTALL.md).
-4. Pull your exports, following [INSTALL.md](INSTALL.md) step by step.
+3. Add it to your AI. In Claude (Chat, Cowork or Code), open **Customize** in the left-hand menu → **Skills** → **Yours** → **+** → **Create skill** → **Upload a skill**. ChatGPT and Gemini steps are in [INSTALL.md](INSTALL.md).
+4. Pull your four exports, two from Google Ads and two from Shopify, following [INSTALL.md](INSTALL.md) step by step.
 5. Start a new chat and type **run the profit leak scan**.
 
 ## What you need
 
-Up to five CSV files, all covering the same 90 days:
+Four CSV files, all covering the same 90 days. Two come from Google Ads and two from Shopify.
 
-1. Google Ads campaigns report, with Conv. value
-2. Google Ads search terms report, with Conv. value
-3. Google Ads Performance Max search terms, if you run Performance Max
-4. Shopify orders export
-5. Shopify products export, with cost per item
+| # | File | Comes from | Needs |
+|---|---|---|---|
+| 1 | Campaigns report | Google Ads | Conv. value, and Original conv. value if your account offers it. [Step 4](INSTALL.md#step-4-google-ads-the-campaigns-report-file-1) |
+| 2 | Search terms report | Google Ads | The same two columns, and a filter for Cost greater than 0. [Step 5](INSTALL.md#step-5-google-ads-the-search-terms-report-file-2) |
+| 3 | Orders | Shopify | Exported by date. [Step 6](INSTALL.md#step-6-shopify-orders-file-3) |
+| 4 | Products | Shopify | Cost per item. [Step 7](INSTALL.md#step-7-shopify-products-file-4) |
 
-No cost per item? Skip file 5 and the scan will ask for your margin instead, then label every profit figure an estimate.
+No cost per item? Skip file 4 and the scan will ask for your margin instead, then label every profit figure an estimate.
 
 ## Why it exists
 
@@ -105,7 +106,7 @@ INSTALL.md                    setup for Claude, ChatGPT and Gemini, and how to p
 references/
   store-brief.md              the questions the scan asks about your store
   method.md                   every calculation, in order
-  negatives-seed.md           AU and NZ negative keyword seeds
+  negatives-seed.md           negative keyword seeds for AU, NZ, the UK and the US
   settings-check.md           the ten checks and how to answer them
   glossary.md                 plain-English definitions
   example-report.md           output format (invented numbers)
