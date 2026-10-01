@@ -4,7 +4,7 @@ The questions to ask before any files arrive, and what each answer changes.
 
 Exports tell you what happened in the account. They do not tell you what each campaign is for, what the store earns on a sale, or which customers come back. Without those answers the report is generic. With them it fits the store.
 
-**Show all the questions in one message.** Say every answer is optional and that "not sure" is fine. Do not ask them one at a time. One at a time is for the settings check.
+**Show all the questions in one message.** Say every answer after the brand name is optional and that "not sure" is fine. Do not ask them one at a time. One at a time is for the settings check.
 
 If the owner has pasted a brief, a strategy document or notes about the store, read that first and ask only what it leaves out.
 
@@ -18,8 +18,8 @@ Show these to the owner as written.
 >
 > 1. Your brand name, and any misspellings people use for it. *(This one I need.)*
 > 2. Brands you stock but don't own, and any competitors people might search for instead of you.
-> 3. Do your Shopify prices include GST? Yes, no or not sure.
-> 4. When Google Ads records a $100 sale, does that $100 include GST? Does it include delivery?
+> 3. Do your Shopify prices include tax (GST, VAT or sales tax)? Yes, no or not sure.
+> 4. When Google Ads records a sale, does the amount include tax? Does it include delivery?
 > 5. Roughly what does an average order cost you to ship?
 > 6. Roughly what percentage of an average order is left after product cost, shipping and payment fees?
 > 7. How long do people usually take between first clicking an ad and buying? Same day, a few days, or a week or more?
@@ -29,6 +29,8 @@ Show these to the owner as written.
 > 11. Any campaigns that work as one group? For example, best sellers split out from the rest of the range, or one campaign per margin tier.
 > 12. Which products bring in new customers who come back and buy again? If you are willing to break even or lose a little on a first order to win them, how much?
 > 13. Anything unusual in the window? A sale, stock running out, a site change, a tracking change.
+> 14. Is Customer acquisition switched on in any Google Ads campaign? If so, which campaigns, and is it set to bid higher for new customers or to only bid for new customers?
+> 15. Do you sell any of these: wholesale or trade, used or refurbished stock, spare parts or repair kits, on marketplaces such as Amazon or eBay? And do you promote a buy now pay later option?
 
 ---
 
@@ -37,18 +39,20 @@ Show these to the owner as written.
 | # | Used for | If there is no answer |
 |---|---|---|
 | 1 | Brand matching and the safety check in `method.md` | Ask again. The brand leak section cannot run without it |
-| 2 | The stocked-brand and competitor classes in brand matching | Treat those searches as generic |
+| 2 | The stocked-brand and competitor classes in brand matching | Take stocked brands from the Vendor column in the products export and show the owner the list. Treat competitor searches as generic |
 | 3 | Taking GST out of Shopify revenue (`method.md` § Same footing) | Work it out from the orders export. The method says how |
 | 4 | Taking GST out of Google's conversion value, and settings check 7 | Work it out from the data. If the data cannot tell, assume it matches the Shopify price basis and say so |
 | 5 | Shipping cost in the margin | Leave shipping out and say every profit figure is therefore optimistic |
 | 6 | The margin when cost per item is missing, and a cross-check when it is not | Work it out from cost per item. With neither, the profit section cannot run |
 | 7 | Conversion lag (`method.md` § Using the store brief) | Assume 7 days |
-| 8 | How each campaign is judged | Treat every campaign as a sales campaign and say so |
+| 8 | How each campaign is judged | Read a role from the campaign name where it is plain, treat Demand Gen as finding new customers and every other campaign as a sales campaign, and say which roles you assumed |
 | 9 | Margin per campaign | Use the store margin for every campaign, and say that break-even is then the same for all of them |
 | 10 | Leaving campaigns out of flags and fixes | Include everything |
-| 11 | Reporting and judging campaigns as a group | Report each campaign on its own |
+| 11 | Reporting and judging campaigns as a group | Report each campaign on its own. If the names look like one group, show the group's total beside them and ask |
 | 12 | Allowing a first-order loss on campaigns that win repeat customers | Judge every campaign on first-order break-even, and say repeat purchases are not counted |
 | 13 | Explaining numbers that look odd | Nothing |
+| 14 | Settings check 4, and which value column to trust (`method.md` § Same footing) | For the value column, assume it is off, and say so. Settings check 4 stays unanswered until the owner answers, and "not sure" leaves it unanswered too. If the exports carry both Conv. value and Original conv. value and the two differ, something is being added, so ask again |
+| 15 | Which negative keyword blocks are safe for this store (`negatives-seed.md`) | Leave these blocks off the list: Marketplaces, Second-hand and free, Buy now pay later, Wrong buyer, and Repair and parts. Say they were left off because nobody confirmed they are safe |
 
 Every default you use goes in the "what this is built on" lines at the top of the report.
 
